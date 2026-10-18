@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaFile — Your Files. Your Workflow.</title>
+  <meta name="description" content="NovaFile is a modern file manager for Windows with folder tabs, split views, drag-and-drop docking, fast search, and rebindable keyboard shortcuts.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NovaFile — Your Files. Your Workflow.">
+  <meta property="og:description" content="A modern file manager designed to make browsing, organizing, and navigating your files simpler.">
+  <!-- Replace with an absolute URL once the site has a domain -->
+  <meta property="og:image" content="assets/img/icon-256.png">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icon-256.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-64.png" alt="" width="28" height="28">
+        NovaFile
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="site-nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="download.html" data-download>Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">File manager for Windows</p>
+          <h1>Your Files. Your Workflow. NovaFile.</h1>
+          <p class="lead">
+            A modern file manager designed to make browsing, organizing, and
+            navigating your files simpler.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="download.html" data-download>Download NovaFile</a>
+            <a class="btn btn-secondary" href="features.html">Explore Features</a>
+          </div>
+          <ul class="hero-meta">
+            <li>Version <span data-version>1.0.0</span></li>
+            <li>Windows (64-bit)</li>
+            <li>Single executable, no runtime dependencies</li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- Screenshot: assets/js/main.js replaces the placeholder with a real
+               image automatically once you add assets/img/app-screenshot.png -->
+          <figure class="shot" data-shot-slot>
+            <div class="shot-placeholder" data-shot-placeholder>
+              <span class="ph-badge">Preview placeholder</span>
+              <p>App screenshot pending — drop a capture at assets/img/app-screenshot.png and it appears here.</p>
+            </div>
+          </figure>
+          <p class="shot-caption">The NovaFile window: tabs, address bar, and the sidebar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature overview -->
+    <section aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why NovaFile</p>
+          <h2 id="features-heading">Built around how you actually work</h2>
+          <p>Every feature below is in the current release — no roadmap promises.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <span class="card-tag">Ctrl+N · Ctrl+Tab</span>
+            <h3>Folder tabs</h3>
+            <p>Keep many folders open at once, reorder them, close them individually or all at once — up to 20 tabs per window.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Ctrl+E · Ctrl+W</span>
+            <h3>Split views</h3>
+            <p>Divide the window into panes and work in two folders side by side. Layouts can nest, and each pane remembers its own path.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Drag a tab</span>
+            <h3>Drag-and-drop docking</h3>
+            <p>Drag a tab over a pane and drop zones preview exactly where it will land. Rearrange your layout without touching a menu.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Ctrl+F</span>
+            <h3>Search &amp; navigation</h3>
+            <p>Filter the current folder as you type, press Enter to scan subfolders with progress, and jump anywhere from the address bar.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Ctrl+,</span>
+            <h3>Keyboard shortcuts</h3>
+            <p>Every core action is a keystroke, and shortcuts are rebindable in Settings — with per-shortcut on/off switches.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">F3 · Ctrl+T</span>
+            <h3>Views &amp; themes</h3>
+            <p>Five view modes with size zoom from 15–100%, crisp shell thumbnails, and dark or light themes.</p>
+          </article>
+        </div>
+
+        <p style="margin-top:28px">
+          <a href="features.html">See all features &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Download callout -->
+    <section aria-labelledby="download-heading">
+      <div class="container">
+        <div class="callout">
+          <div>
+            <p class="eyebrow">Get NovaFile</p>
+            <h2 id="download-heading">Ready when you are</h2>
+            <p>
+              Version <span data-version>1.0.0</span> for Windows (64-bit) —
+              per-user installer, no admin rights required.
+            </p>
+          </div>
+          <div class="callout-actions">
+            <a class="btn btn-primary" href="download.html" data-download>Download NovaFile</a>
+            <a class="callout-meta" href="download.html">System requirements &amp; install steps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-64.png" alt="" width="24" height="24">
+        NovaFile
+      </div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="guide.html">Documentation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span data-year>2026</span> NovaFile. A file manager for Windows, written in C.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

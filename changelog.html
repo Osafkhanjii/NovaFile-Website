@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Changelog — NovaFile</title>
+  <meta name="description" content="NovaFile release history. Version 1.0.0 — tabs, split views, docking, search, themes, shortcuts, session restore, and the built-in updater.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Changelog — NovaFile">
+  <meta property="og:description" content="What shipped in each NovaFile release.">
+  <!-- Replace with an absolute URL once the site has a domain -->
+  <meta property="og:image" content="assets/img/icon-256.png">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icon-256.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-64.png" alt="" width="28" height="28">
+        NovaFile
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="download.html" data-download>Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Changelog</p>
+          <h1>Release history</h1>
+          <p class="lead">Every NovaFile release, newest first.</p>
+        </div>
+
+        <div class="prose">
+          <h2>NovaFile <span data-version>1.0.0</span> <span class="card-tag" style="vertical-align: middle;">Current</span></h2>
+          <p class="muted">Initial release.</p>
+          <ul>
+            <li><strong>Folder tabs</strong> — multiple tabs per window with reorder, tab menu, and a 20-tab limit; middle-click opens folders in a new tab.</li>
+            <li><strong>Split views</strong> — nestable panes (<kbd>Ctrl+E</kbd> / <kbd>Ctrl+W</kbd>) that each remember their own path and history.</li>
+            <li><strong>Drag-and-drop docking</strong> — drag tabs between panes with drop-zone previews.</li>
+            <li><strong>Search</strong> — instant ranked filtering of the current folder, Enter scans subfolders with progress and cancel.</li>
+            <li><strong>Navigation</strong> — breadcrumb address bar, typed paths, back/forward/up/refresh, sidebar with Recents, Bookmarks, Storage, and Places, plus the Quick Access wheel (<kbd>C</kbd>).</li>
+            <li><strong>Views &amp; visuals</strong> — five view modes, 15–100% size zoom, shell icons and thumbnails, high-DPI support.</li>
+            <li><strong>Dark &amp; light themes</strong> — switchable with <kbd>Ctrl+T</kbd>.</li>
+            <li><strong>Rebindable shortcuts</strong> — every shortcut editable in Settings with conflict refusal and per-shortcut switches.</li>
+            <li><strong>Session restore</strong> — reopen your tabs and panes on launch (<em>Restore Previous Session</em> setting).</li>
+            <li><strong>Built-in updater</strong> — Settings &rarr; Updates checks a verified release manifest over HTTPS.</li>
+            <li><strong>Installer</strong> — per-user Inno Setup installer, no administrator rights required.</li>
+          </ul>
+
+          <p class="muted">
+            Download this version from the <a href="download.html">download page</a>,
+            or read the <a href="guide.html">guide</a> to get started.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-64.png" alt="" width="24" height="24">
+        NovaFile
+      </div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="guide.html">Documentation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span data-year>2026</span> NovaFile. A file manager for Windows, written in C.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

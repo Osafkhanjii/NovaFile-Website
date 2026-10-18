@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — NovaFile</title>
+  <meta name="description" content="NovaFile is a file manager for Windows, written from scratch in C on the raw Win32 API — one fast executable with no runtime dependencies.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About NovaFile">
+  <meta property="og:description" content="A modern file manager for Windows, written from scratch in C — no UI toolkit, no runtime dependencies.">
+  <!-- Replace with an absolute URL once the site has a domain -->
+  <meta property="og:image" content="assets/img/icon-256.png">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icon-256.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-64.png" alt="" width="28" height="28">
+        NovaFile
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="download.html" data-download>Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h1>A file manager, rebuilt from scratch</h1>
+          <p class="lead">
+            NovaFile is a modern file manager for Windows. It is written from
+            scratch in C directly on the Win32 API — no UI toolkit, no framework,
+            one fast executable.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h2>Pure C on Win32</h2>
+            <p>The platform layer, windowing, and rendering are built directly on Win32 and GDI. There is no Electron, no .NET, and no GUI toolkit in between — just C compiled to a native executable.</p>
+          </article>
+
+          <article class="card">
+            <h2>One executable, no runtime</h2>
+            <p>NovaFile ships as a single executable that depends only on libraries Windows already provides. Nothing extra to install: download, run, work.</p>
+          </article>
+
+          <article class="card">
+            <h2>Responsive by design</h2>
+            <p>Directory scans, shell icon lookups, and image decodes all run on background worker threads, so the window keeps responding even in very large folders.</p>
+          </article>
+
+          <article class="card">
+            <h2>Sharp on every display</h2>
+            <p>The process is DPI aware and every UI element scales through one factor, keeping text and icons crisp at 150–200% display scaling.</p>
+          </article>
+
+          <article class="card">
+            <h2>Your data stays local</h2>
+            <p>Settings, shortcuts, and session state live in <code>%LOCALAPPDATA%\NovaFile</code> on your machine. The only network activity is the optional update check over HTTPS.</p>
+          </article>
+
+          <article class="card">
+            <h2>Failures are visible</h2>
+            <p>If NovaFile ever hits an internal fault it raises a dialog with the exception details instead of closing silently — you always know what happened.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Tech stack</p>
+          <h2 id="stack-heading">How it's built</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th scope="row">Language</th><td>C (gnu11)</td></tr>
+              <tr><th scope="row">Platform layer</th><td>Custom Win32 layer</td></tr>
+              <tr><th scope="row">Rendering</th><td>GDI, drawn through a single scale factor</td></tr>
+              <tr><th scope="row">Build</th><td>GCC (MinGW-w64), no runtime dependencies</td></tr>
+              <tr><th scope="row">Installer</th><td>Inno Setup, per-user (no admin rights needed)</td></tr>
+              <tr><th scope="row">Current version</th><td><span data-version>1.0.0</span></td></tr>
+              <tr><th scope="row">Supported OS</th><td>Windows, 64-bit (x64)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:24px">
+          Want the details? The <a href="guide.html">guide</a> covers day-to-day use,
+          the <a href="features.html">features page</a> lists everything in the current
+          release, and the <a href="changelog.html">changelog</a> tracks versions.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="get-heading">
+      <div class="container">
+        <div class="callout">
+          <div>
+            <p class="eyebrow">Current release</p>
+            <h2 id="get-heading">NovaFile <span data-version>1.0.0</span></h2>
+            <p>For Windows (64-bit) — per-user installer, no runtime to install.</p>
+          </div>
+          <div class="callout-actions">
+            <a class="btn btn-primary" href="download.html" data-download>Download NovaFile</a>
+            <a class="callout-meta" href="changelog.html">What's new in this version</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-64.png" alt="" width="24" height="24">
+        NovaFile
+      </div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="guide.html">Documentation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span data-year>2026</span> NovaFile. A file manager for Windows, written in C.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

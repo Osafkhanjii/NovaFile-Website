@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide — NovaFile</title>
+  <meta name="description" content="Get started with NovaFile: first steps, tabs and panes, search tips, the full keyboard shortcut reference, and settings.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Guide — NovaFile">
+  <meta property="og:description" content="Learn NovaFile: getting started, working with tabs and split views, search, and every default keyboard shortcut.">
+  <!-- Replace with an absolute URL once the site has a domain -->
+  <meta property="og:image" content="assets/img/icon-256.png">
+  <meta name="theme-color" content="#0e1116">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icon-256.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-64.png" alt="" width="28" height="28">
+        NovaFile
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="guide.html" aria-current="page">Guide</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="download.html" data-download>Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Documentation</p>
+          <h1>Guide to NovaFile</h1>
+          <p class="lead">
+            First steps, the working model behind tabs and panes, and every
+            default keyboard shortcut. All shortcuts are rebindable in Settings.
+          </p>
+        </div>
+
+        <div class="prose">
+          <h2 id="start">Getting started</h2>
+          <ol class="steps">
+            <li>
+              <strong>Install</strong>
+              Run the downloaded <code>NovaFile-Setup.exe</code> — a per-user install with no administrator prompt.
+            </li>
+            <li>
+              <strong>Open a folder</strong>
+              Use the sidebar (Recents, Bookmarks, Storage, Places) or type a path in the address bar and press Enter.
+            </li>
+            <li>
+              <strong>Arrange your workspace</strong>
+              Open tabs with <kbd>Ctrl+N</kbd>, split with <kbd>Ctrl+E</kbd>, and drag tabs between panes.
+            </li>
+          </ol>
+
+          <h2 id="tabs-panes">Tabs and split views</h2>
+          <ul>
+            <li><strong>Tabs</strong> — <kbd>Ctrl+N</kbd> opens one; <kbd>Ctrl+Tab</kbd> / <kbd>Ctrl+Shift+Tab</kbd> cycle. Drag to reorder, right-click a tab for shift / duplicate / close-others / close-all.</li>
+            <li><strong>Splitting</strong> — <kbd>Ctrl+E</kbd> splits the current pane to the right; <kbd>Ctrl+W</kbd> closes the focused pane. Splits can nest, and every pane keeps its own path and history.</li>
+            <li><strong>Docking</strong> — drag a tab over another pane: the drop zone highlights where it will land, then release to dock it there.</li>
+            <li><strong>Session restore</strong> — with <em>Restore Previous Session</em> on (Settings), NovaFile reopens your tabs and panes when it starts.</li>
+          </ul>
+
+          <h2 id="search">Searching and navigating</h2>
+          <ul>
+            <li><strong>Filter as you type</strong> — the search box filters the current folder instantly (exact matches first, then prefixes, word starts, and substrings; each step can be toggled in Settings &rarr; Search).</li>
+            <li><strong>Go deeper</strong> — press <kbd>Enter</kbd> in the search box to scan subfolders, with progress and cancel in the status bar.</li>
+            <li><strong>Focus it fast</strong> — <kbd>Ctrl+F</kbd> or <kbd>Ctrl+L</kbd>; <kbd>Esc</kbd> clears the query.</li>
+            <li><strong>Breadcrumbs</strong> — click any segment of the path to jump there, or press <kbd>Tab</kbd> to edit the path directly.</li>
+            <li><strong>Quick Access wheel</strong> — press <kbd>C</kbd> anywhere for a radial wheel of your starred folders.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="shortcuts-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Reference</p>
+          <h2 id="shortcuts-heading">Keyboard shortcuts</h2>
+          <p>Defaults — change any of them in Settings (<kbd>Ctrl+,</kbd>).</p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));">
+          <div>
+            <h3>Navigation</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead>
+                <tbody>
+                  <tr><td><kbd>&uarr;</kbd> / <kbd>&darr;</kbd></td><td>Move selection</td></tr>
+                  <tr><td><kbd>PgUp</kbd> / <kbd>PgDn</kbd></td><td>Jump a page</td></tr>
+                  <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>First / last item</td></tr>
+                  <tr><td><kbd>Enter</kbd> or <kbd>&rarr;</kbd></td><td>Open folder or run file</td></tr>
+                  <tr><td><kbd>Backspace</kbd> or <kbd>&larr;</kbd></td><td>Go to the parent folder</td></tr>
+                  <tr><td><kbd>F5</kbd></td><td>Refresh the current folder</td></tr>
+                  <tr><td><kbd>Tab</kbd></td><td>Focus the address bar (breadcrumb)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h3>Tabs and panes</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead>
+                <tbody>
+                  <tr><td><kbd>Ctrl+N</kbd></td><td>New tab</td></tr>
+                  <tr><td><kbd>Ctrl+Tab</kbd> / <kbd>Ctrl+Shift+Tab</kbd></td><td>Next / previous tab</td></tr>
+                  <tr><td><kbd>Ctrl+Shift+PgUp</kbd> / <kbd>PgDn</kbd></td><td>Shift the active tab left / right</td></tr>
+                  <tr><td><kbd>Ctrl+E</kbd></td><td>Split the pane to the right</td></tr>
+                  <tr><td><kbd>Ctrl+W</kbd></td><td>Close the focused pane</td></tr>
+                  <tr><td><kbd>C</kbd></td><td>Quick Access wheel (starred folders)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h3>Files and search</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead>
+                <tbody>
+                  <tr><td><kbd>Ctrl+F</kbd> / <kbd>Ctrl+L</kbd></td><td>Focus the search / filter box</td></tr>
+                  <tr><td><kbd>F2</kbd></td><td>Rename the selected item inline</td></tr>
+                  <tr><td><kbd>Delete</kbd></td><td>Delete the selection (confirmation always runs)</td></tr>
+                  <tr><td><kbd>Ctrl+C</kbd> / <kbd>Ctrl+X</kbd> / <kbd>Ctrl+V</kbd></td><td>Copy / cut / paste files and folders</td></tr>
+                  <tr><td><kbd>Ctrl+A</kbd></td><td>Select every row</td></tr>
+                  <tr><td><kbd>Ctrl+B</kbd></td><td>Bookmark the current folder</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h3>View and app</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Key</th><th scope="col">Action</th></tr></thead>
+                <tbody>
+                  <tr><td><kbd>F3</kbd></td><td>Details &harr; Icons</td></tr>
+                  <tr><td><kbd>Ctrl+wheel</kbd></td><td>Size in / out (animated, 10% steps)</td></tr>
+                  <tr><td><kbd>Ctrl+H</kbd></td><td>Show / hide hidden and system files</td></tr>
+                  <tr><td><kbd>Ctrl+T</kbd></td><td>Dark &harr; light theme</td></tr>
+                  <tr><td><kbd>Ctrl+,</kbd></td><td>Open Settings</td></tr>
+                  <tr><td><kbd>Ctrl+Q</kbd> or <kbd>Esc</kbd></td><td>Exit (Esc first leaves a field or closes a menu)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="settings-heading">
+      <div class="container">
+        <div class="prose">
+          <h2 id="settings-heading">Settings and customization</h2>
+          <p>
+            Open Settings with the gear button or <kbd>Ctrl+,</kbd>. The panel is
+            generated from NovaFile's command registry, so it always lists every
+            action and switch as the app actually implements it.
+          </p>
+          <ul>
+            <li><strong>Rebinding</strong> — click a key row and press the new combination. Conflicts are refused with a message; a shortcut can never silently shadow another one.</li>
+            <li><strong>Switches</strong> — turn individual features (and their shortcuts) on or off.</li>
+            <li><strong>Storage</strong> — settings save immediately to <code>%LOCALAPPDATA%\NovaFile\settings.txt</code>, and the live path is shown under <em>Advanced &rarr; Settings file</em>.</li>
+            <li><strong>Updates</strong> — <em>Settings &rarr; Updates</em> checks for a new release and installs it through the verified background updater.</li>
+          </ul>
+
+          <p class="muted">
+            Looking for what's new? See the <a href="changelog.html">changelog</a>,
+            or head to the <a href="download.html">download page</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo-64.png" alt="" width="24" height="24">
+        NovaFile
+      </div>
+      <ul class="footer-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="guide.html">Documentation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span data-year>2026</span> NovaFile. A file manager for Windows, written in C.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
