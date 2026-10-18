@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download — NovaFile</title>
-  <meta name="description" content="Download NovaFile version 1.0.0 for Windows (64-bit). Per-user installer, no admin rights required.">
+  <meta name="description" content="Download NovaFile version 1.1.0 for Windows (64-bit). Per-user installer, no admin rights required.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Download NovaFile">
-  <meta property="og:description" content="NovaFile 1.0.0 for Windows (64-bit) — a lightweight file manager with a per-user installer.">
+  <meta property="og:description" content="NovaFile 1.1.0 for Windows (64-bit) — a lightweight file manager with a per-user installer.">
   <!-- Replace with an absolute URL once the site has a domain -->
   <meta property="og:image" content="assets/img/icon-256.png">
   <meta name="theme-color" content="#0e1116">
@@ -50,14 +50,14 @@
           <h1>Get NovaFile</h1>
           <p class="lead">
             One lightweight installer for Windows. Version
-            <span data-version>1.0.0</span> — no runtime to install, no
+            <span data-version>1.1.0</span> — no runtime to install, no
             admin prompt.
           </p>
         </div>
 
         <div class="release-card">
           <div>
-            <div class="release-version">NovaFile <span data-version>1.0.0</span></div>
+            <div class="release-version">NovaFile <span data-version>1.1.0</span></div>
             <p class="release-meta">
               Windows (64-bit) &middot; Per-user installer &middot;
               <span data-installer-size>~2.6 MB</span> &middot; Latest release
@@ -72,7 +72,7 @@
             <!-- Clearly labelled placeholder while the binary is unpublished -->
             <div class="notice" data-download-placeholder>
               <strong>Download not yet published</strong>
-              The installer for version <span data-version>1.0.0</span> has not
+              The installer for version <span data-version>1.1.0</span> has not
               been posted publicly yet. The download button will appear here
               automatically as soon as it is available — check back soon.
             </div>
@@ -95,7 +95,7 @@
               <tr><th scope="row">Install rights</th><td>Per-user install — no administrator rights required</td></tr>
               <tr><th scope="row">Dependencies</th><td>None — a single executable that uses only Windows system libraries</td></tr>
               <tr><th scope="row">Installer size</th><td><span data-installer-size>~2.6 MB</span></td></tr>
-              <tr><th scope="row">Version</th><td><span data-version>1.0.0</span> (current)</td></tr>
+              <tr><th scope="row">Version</th><td><span data-version>1.1.0</span> (current)</td></tr>
             </tbody>
           </table>
         </div>
@@ -111,11 +111,12 @@
         <ol class="steps">
           <li>
             <strong>Download the installer</strong>
-            Save <code>NovaFile-Setup-<span data-version>1.0.0</span>.exe</code> to your computer.
+            Save <code>NovaFile-Setup-<span data-version>1.1.0</span>.exe</code> to your computer.
           </li>
           <li>
             <strong>Run it</strong>
             Double-click the installer. It performs a per-user install — no UAC or administrator prompt — and can add a Start Menu and desktop shortcut.
+            If Windows shows <em>&ldquo;Windows protected your PC&rdquo;</em> on the first run, follow the short guide right below.
           </li>
           <li>
             <strong>Start working</strong>
@@ -128,6 +129,44 @@
           <em>Settings &rarr; Apps</em> on Windows, or the entry the installer adds to
           <em>Programs and Features</em>.
         </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="prompt-heading">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">First run</p>
+          <h2 id="prompt-heading">If Windows shows &ldquo;Windows protected your PC&rdquo;</h2>
+          <p class="lead">
+            Microsoft Defender SmartScreen checks every freshly downloaded app that
+            has no code-signing certificate yet — NovaFile is a new, independently
+            built app, so the very first run of the installer shows this blue
+            prompt. It is a <strong>reputation</strong> notice, not a virus verdict.
+            This is exactly how to continue:
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Click &ldquo;More info&rdquo;</strong>
+            The dialog expands and shows the file name
+            (<code>NovaFile-Setup-<span data-version>1.1.0</span>.exe</code>) and
+            <em>Publisher: Unknown publisher</em>.
+          </li>
+          <li>
+            <strong>Click &ldquo;Run anyway&rdquo;</strong>
+            The installer starts immediately — a per-user install with no
+            administrator prompt.
+          </li>
+        </ol>
+        <div class="notice">
+          <strong>Why the prompt appears, and why running is your choice</strong><br>
+          SmartScreen blocks apps it does not <em>recognize</em> (too new, unsigned),
+          not apps it detected as malware. The prompt only appears for files
+          downloaded from the internet; the installed NovaFile app itself opens
+          without any prompt. You can also verify the file before running it —
+          SHA-256 of <code>NovaFile-Setup-<span data-version>1.1.0</span>.exe</code>:<br>
+          <code style="word-break:break-all"><span data-sha256>&hellip;</span></code>
+        </div>
       </div>
     </section>
 

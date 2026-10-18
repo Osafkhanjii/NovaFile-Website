@@ -40,6 +40,9 @@
   document.querySelectorAll("[data-installer-size]").forEach(function (el) {
     el.textContent = cfg.installerSize;
   });
+  document.querySelectorAll("[data-sha256]").forEach(function (el) {
+    if (cfg.sha256) el.textContent = cfg.sha256;
+  });
 
   // Wire download links. With no published URL they keep pointing at the
   // Download page (a real route); with a URL they become direct downloads

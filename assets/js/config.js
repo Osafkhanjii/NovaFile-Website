@@ -14,5 +14,8 @@ window.NOVA_CONFIG = {
    *   "https://downloads.example.com/novafile/NovaFile-Setup-1.1.0.exe"
    * Leave "" to show the "not yet published" placeholder. */
   downloadUrl: "downloads/NovaFile-Setup-1.1.0.exe",
-  installerSize: "~2.7 MB"
+  installerSize: "~2.7 MB",
+  /* SHA-256 of that exact file — shown on the Download page so users can
+   * verify the installer before running it. Update on every release. */
+  sha256: "2f1f7b49cde29d17569f859d783f58a33e4ade0cf7af8f5b24aaa4a685a7ebbc"
 };
