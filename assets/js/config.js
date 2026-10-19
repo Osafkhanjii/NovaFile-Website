@@ -13,7 +13,10 @@ window.NOVA_CONFIG = {
    * put an absolute URL here:
    *   "https://downloads.example.com/novafile/NovaFile-Setup-1.1.0.exe"
    * Leave "" to show the "not yet published" placeholder. */
-  downloadUrl: "downloads/NovaFile-Setup-1.1.0.exe",
+  /* Served from the GitHub Release asset, so every download is counted by
+   * GitHub (owner view: the Releases page, "N downloads" under the file).
+   * The website/downloads/ copy exists only for the offline ZIP. */
+  downloadUrl: "https://github.com/Osafkhanjii/NovaFile/releases/download/v1.1.0/NovaFile-Setup-1.1.0.exe",
   installerSize: "~2.7 MB",
   /* SHA-256 of that exact file — shown on the Download page so users can
    * verify the installer before running it. Update on every release. */
