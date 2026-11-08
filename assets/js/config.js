@@ -7,7 +7,7 @@
  *   instead of a dead link.
  */
 window.NOVA_CONFIG = {
-  version: "1.2.0",
+  version: "1.2.1",
   /* The installer is shipped in website/downloads/, so the button works
    * out of the box on any host. To serve it from release hosting instead,
    * put an absolute URL here:
@@ -16,9 +16,9 @@ window.NOVA_CONFIG = {
   /* Served from the GitHub Release asset, so every download is counted by
    * GitHub (owner view: the Releases page, "N downloads" under the file).
    * The website/downloads/ copy exists only for the offline ZIP. */
-  downloadUrl: "https://github.com/Osafkhanjii/NovaFile/releases/download/v1.2.0/NovaFile-Setup-1.2.0.exe",
+  downloadUrl: "https://github.com/Osafkhanjii/NovaFile/releases/download/v1.2.1/NovaFile-Setup-1.2.1.exe",
   installerSize: "~2.7 MB",
   /* SHA-256 of that exact file — shown on the Download page so users can
    * verify the installer before running it. Update on every release. */
-  sha256: "e6b482b7d42b5f9bf3ad4f4922c0a69237b24599a1ccc8cf8b9b7732b8d5987c"
+  sha256: "6a325d96f2be03c9f83920a6959781b864a76f2c01400de839e913246738f3a2"
 };
