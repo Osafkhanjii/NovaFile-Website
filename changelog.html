@@ -52,7 +52,18 @@
         </div>
 
         <div class="prose">
-          <h2>NovaFile <span data-version>1.3.0</span> <span class="card-tag" style="vertical-align: middle;">Current</span></h2>
+          <h2>NovaFile <span data-version>1.4.0</span> <span class="card-tag" style="vertical-align: middle;">Current</span></h2>
+          <p class="muted">Video thumbnails everywhere, much faster EXR, new shortcuts.</p>
+          <ul>
+            <li><strong>ProRes .mov thumbnails on every PC</strong> &mdash; Windows has no ProRes codec, so ProRes .mov files showed a blank icon on most PCs. NovaFile now decodes them itself &mdash; every profile (Proxy, LT, 422, HQ, 4444, 4444 XQ), interlaced too &mdash; in a few milliseconds.</li>
+            <li><strong>Other videos too</strong> &mdash; when Windows has no thumbnail for a .mov / .mp4 / .m4v, NovaFile grabs a frame through Windows Media Foundation instead of showing an icon.</li>
+            <li><strong>EXR thumbnails ~8x faster</strong> &mdash; a folder of 60 4K frames shows in about half a second instead of four. Zooming no longer reloads the pictures, the picture stays on screen while a new size loads, and opening a folder prepares all its frames in the background.</li>
+            <li><strong><kbd>Ctrl+Shift+N</kbd></strong> creates a new folder (<kbd>Ctrl+N</kbd> still opens a new tab).</li>
+            <li><strong>Panes follow the mouse</strong> &mdash; with split panes, moving the mouse into a pane makes it the active one, no click needed (Settings &rarr; Panes to switch it off).</li>
+            <li>Installed copies (1.2.0 and later) receive this update automatically inside the app.</li>
+          </ul>
+
+          <h2>NovaFile 1.3.0</h2>
           <p class="muted">EXR thumbnails, a mouse selection box and your own tab names.</p>
           <ul>
             <li><strong>OpenEXR thumbnails</strong> &mdash; <code>.exr</code> frames (Nuke / VFX image sequences) now show a real picture instead of a blank icon, on every PC, with nothing extra to install. All standard compressions are supported, including DWAA/DWAB and PIZ, plus tiled and multi-part files.</li>
